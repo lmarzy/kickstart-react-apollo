@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { HomePage } from './home';
+import { BooksPage } from './books';
 
-describe('Home Page', () => {
-  const { getByText } = render(<HomePage />);
+describe('Books Page', () => {
+  const { getByText } = render(<BooksPage />);
 
   test('shows correct page title', () => {
-    const pageTitle = getByText('Home Page');
+    const pageTitle = getByText('Books Page');
     expect(pageTitle).toBeInTheDocument();
   });
 });

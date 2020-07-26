@@ -1,3 +1,3 @@
 export { HomePage } from './home';
-export { AboutPage } from './about';
-export { ContextPage } from './context';
+export { MoviesPage } from './movies';
+export { BooksPage } from './books';

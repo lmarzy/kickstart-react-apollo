@@ -4,19 +4,21 @@ import { ApolloProvider } from '@apollo/client';
 
 import { apolloClient } from './apollo-client';
 
-import { HomePage, AboutPage, ContextPage } from 'pages';
-import { Header, Nav } from 'sections';
+import { HomePage, MoviesPage, BooksPage } from 'pages';
+import { Header, Footer } from 'sections';
 
 import 'styles/app.scss';
 
 export const App: FunctionComponent = (): ReactElement => (
   <ApolloProvider client={apolloClient}>
     <Header />
-    <Nav />
-    <Switch>
-      <Route path="/" component={HomePage} exact />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/context" component={ContextPage} />
-    </Switch>
+    <main>
+      <Switch>
+        <Route path="/" component={HomePage} exact />
+        <Route path="/movies" component={MoviesPage} />
+        <Route path="/Books" component={BooksPage} />
+      </Switch>
+    </main>
+    <Footer />
   </ApolloProvider>
 );

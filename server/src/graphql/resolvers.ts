@@ -1,3 +1,3 @@
-import { movieResolver, spaceXResolvers } from '../modules';
+import { movieResolver, bookResolver, spaceXResolvers } from '../modules';
 
-export const resolvers = [movieResolver, spaceXResolvers];
+export const resolvers = [movieResolver, bookResolver, spaceXResolvers];

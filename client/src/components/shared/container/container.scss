@@ -1,8 +1,9 @@
 // ========================================================================
-// SETTINGS/LAYOUT
+// COMPONENTS/SHARED/CONTAINER
 // ========================================================================
 
-$max-width: 1024px;
-$grid-columns: 12;
-$rhythm: $line-height-px;
-$gutter: $line-height-px / 2;
+@import '~sassHelpers';
+
+.c-container {
+  @include container;
+}

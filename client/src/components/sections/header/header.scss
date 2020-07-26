@@ -5,6 +5,15 @@
 @import '~sassHelpers';
 
 .c-header {
-  background-color: orange;
-  color: white;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: spacer(2);
+  padding-top: spacer(2);
+
+  .c-container {
+    display: flex;
+  }
+
+  .c-nav {
+    margin-left: auto;
+  }
 }

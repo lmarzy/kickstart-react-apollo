@@ -1,12 +1,12 @@
 import { gql } from 'apollo-server';
 
-export const movieTypeDefs = gql`
-  type Movie {
+export const bookTypeDefs = gql`
+  type Book {
     id: Int
     title: String
-    length: Int
+    author: String
   }
   extend type Query {
-    movies: [Movie]
+    books: [Book]
   }
 `;

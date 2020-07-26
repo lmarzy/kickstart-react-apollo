@@ -1,8 +1,27 @@
-import React, { ReactElement, FunctionComponent } from 'react';
+import React, { ReactElement, Fragment } from 'react';
+import { useQuery } from '@apollo/client';
 
-export const Movies: FunctionComponent = (): ReactElement => (
-  <ul>
-    <li>Movie 1</li>
-    <li>Movie 2</li>
-  </ul>
-);
+import { MOVIES_QUERY, MoviesQueryResult } from './movies.query';
+
+export const Movies = (): ReactElement => {
+  const { loading, error, data } = useQuery<MoviesQueryResult>(MOVIES_QUERY);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  return (
+    <>
+      <h1>Movie List</h1>
+      {data && (
+        <dl data-testid="movies">
+          {data.movies.map(({ id, title, length }) => (
+            <Fragment key={title}>
+              <dt>{title}:</dt>
+              <dl>{length}</dl>
+            </Fragment>
+          ))}
+        </dl>
+      )}
+    </>
+  );
+};
