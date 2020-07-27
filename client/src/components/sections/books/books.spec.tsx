@@ -12,14 +12,14 @@ const mocksData = [
     },
     result: {
       data: {
-        movies: [
+        books: [
           {
-            id: 10001,
+            id: 1000,
             title: 'To Kill a Mockingbird',
-            length: 'Harper Lee',
+            author: 'Harper Lee',
           },
           {
-            id: 10002,
+            id: 1001,
             title: 'The Great Gatsby',
             author: 'F.Scott Fitzgerald',
           },

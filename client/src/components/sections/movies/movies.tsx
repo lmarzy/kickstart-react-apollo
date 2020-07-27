@@ -15,7 +15,7 @@ export const Movies = (): ReactElement => {
       {data && (
         <dl data-testid="movies">
           {data.movies.map(({ id, title, length }) => (
-            <Fragment key={title}>
+            <Fragment key={id}>
               <dt>{title}:</dt>
               <dl>{length}</dl>
             </Fragment>

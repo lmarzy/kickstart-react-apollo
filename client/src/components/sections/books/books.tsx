@@ -11,7 +11,7 @@ export const Books = (): ReactElement => {
 
   return (
     <>
-      <h1>Books List</h1>
+      <h1>Movie List</h1>
       {data && (
         <dl data-testid="books">
           {data.books.map(({ id, title, author }) => (
