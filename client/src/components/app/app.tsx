@@ -4,8 +4,8 @@ import { ApolloProvider } from '@apollo/client';
 
 import { apolloClient } from './apollo-client';
 
-import { HomePage, MoviesPage, BooksPage } from 'pages';
-import { Header, Footer } from 'sections';
+import { HomePage, MoviesPage, BooksPage } from '../pages';
+import { Header, Footer } from '../sections';
 
 import 'styles/app.scss';
 

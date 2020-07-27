@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 
-import { Container } from 'shared';
+import { Container } from '../../shared';
 
 export const HomePage: FunctionComponent = (): ReactElement => (
   <Container>

@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { Container } from 'shared';
+import { Container } from '../../shared';
 
 import './footer.scss';
 

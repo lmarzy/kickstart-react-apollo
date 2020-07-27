@@ -11,7 +11,7 @@ export const Movies = (): ReactElement => {
 
   return (
     <>
-      <h1>Movie List</h1>
+      <h2 className="u-mb-2">Movies List</h2>
       {data && (
         <dl data-testid="movies">
           {data.movies.map(({ id, title, length }) => (
