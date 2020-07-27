@@ -11,6 +11,8 @@ export class SpaceXData extends RESTDataSource {
   async rockets(): Promise<SpaceXDataInterface[]> {
     const data = await this.get(`rockets?limit=10&offset=1`);
 
+    console.log(data);
+
     return data;
   }
 }

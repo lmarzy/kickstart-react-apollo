@@ -4,6 +4,7 @@ export const spaceXTypeDefs = gql`
   type Rockets {
     id: String!
     name: String!
+    active: Boolean!
   }
 
   extend type Query {

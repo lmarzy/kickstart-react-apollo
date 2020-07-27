@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`books resolver full response 1`] = `
+Array [
+  Object {
+    "id": 1000,
+    "length": 148,
+    "title": "Lost Boys",
+  },
+  Object {
+    "id": 10001,
+    "length": 210,
+    "title": "Terminator",
+  },
+]
+`;

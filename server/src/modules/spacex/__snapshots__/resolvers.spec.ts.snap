@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spaceX resolver full response 1`] = `
+Array [
+  Object {
+    "active": true,
+    "boosters": 0,
+    "company": "SpaceX",
+    "cost_per_launch": 50000000,
+    "country": "United States",
+    "description": "Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.",
+    "diameter": Object {
+      "feet": 12,
+      "meters": 3.7,
+    },
+    "engines": Object {
+      "engine_loss_max": "2",
+      "layout": "octaweb",
+      "number": 9,
+      "propellant_1": "liquid oxygen",
+      "propellant_2": "RP-1 kerosene",
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_to_weight": 180.1,
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+      "type": "merlin",
+      "version": "1D+",
+    },
+    "first_flight": "2010-06-04",
+    "first_stage": Object {
+      "burn_time_sec": 162,
+      "engines": 9,
+      "fuel_amount_tons": 385,
+      "reusable": true,
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+    },
+    "height": Object {
+      "feet": 229.6,
+      "meters": 70,
+    },
+    "id": "falcon9",
+    "landing_legs": Object {
+      "material": "carbon fiber",
+      "number": 4,
+    },
+    "mass": Object {
+      "kg": 549054,
+      "lb": 1207920,
+    },
+    "name": "Falcon 9",
+    "payload_weights": Array [
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+    ],
+    "second_stage": Object {
+      "burn_time_sec": 397,
+      "engines": 1,
+      "fuel_amount_tons": 90,
+      "payloads": Array [
+        [Function],
+      ],
+      "thrust": Array [
+        [Function],
+      ],
+    },
+    "stages": 2,
+    "success_rate_pct": 97,
+    "type": "rocket",
+    "wikipedia": "https://en.wikipedia.org/wiki/Falcon_9",
+  },
+  Object {
+    "active": true,
+    "boosters": 2,
+    "company": "SpaceX",
+    "cost_per_launch": 90000000,
+    "country": "United States",
+    "description": "With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.",
+    "diameter": Object {
+      "feet": 39.9,
+      "meters": 12.2,
+    },
+    "engines": Object {
+      "engine_loss_max": "6",
+      "layout": "octaweb",
+      "number": 27,
+      "propellant_1": "liquid oxygen",
+      "propellant_2": "RP-1 kerosene",
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_to_weight": 180.1,
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+      "type": "merlin",
+      "version": "1D+",
+    },
+    "first_flight": "2018-02-06",
+    "first_stage": Object {
+      "burn_time_sec": 162,
+      "engines": 27,
+      "fuel_amount_tons": 1155,
+      "reusable": true,
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+    },
+    "height": Object {
+      "feet": 229.6,
+      "meters": 70,
+    },
+    "id": "falconheavy",
+    "landing_legs": Object {
+      "material": "carbon fiber",
+      "number": 12,
+    },
+    "mass": Object {
+      "kg": 1420788,
+      "lb": 3125735,
+    },
+    "name": "Falcon Heavy",
+    "payload_weights": Array [
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+    ],
+    "second_stage": Object {
+      "burn_time_sec": 397,
+      "engines": 1,
+      "fuel_amount_tons": 90,
+      "payloads": Array [
+        [Function],
+      ],
+      "thrust": Array [
+        [Function],
+      ],
+    },
+    "stages": 2,
+    "success_rate_pct": 100,
+    "type": "rocket",
+    "wikipedia": "https://en.wikipedia.org/wiki/Falcon_Heavy",
+  },
+  Object {
+    "active": false,
+    "boosters": 0,
+    "company": "SpaceX",
+    "cost_per_launch": 7000000,
+    "country": "United States",
+    "description": "Starship and Super Heavy Rocket represent a fully reusable transportation system designed to service all Earth orbit needs as well as the Moon and Mars. This two-stage vehicle — composed of the Super Heavy rocket (booster) and Starship (ship) — will eventually replace Falcon 9, Falcon Heavy and Dragon.",
+    "diameter": Object {
+      "feet": 30,
+      "meters": 9,
+    },
+    "engines": Object {
+      "engine_loss_max": null,
+      "layout": null,
+      "number": 37,
+      "propellant_1": "liquid oxygen",
+      "propellant_2": "liquid methane",
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_to_weight": 107,
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+      "type": "raptor",
+      "version": "",
+    },
+    "first_flight": "2021-12-01",
+    "first_stage": Object {
+      "burn_time_sec": null,
+      "engines": 37,
+      "fuel_amount_tons": 3300,
+      "reusable": true,
+      "thrust_sea_level": Array [
+        [Function],
+      ],
+      "thrust_vacuum": Array [
+        [Function],
+      ],
+    },
+    "height": Object {
+      "feet": 387,
+      "meters": 118,
+    },
+    "id": "starship",
+    "landing_legs": Object {
+      "material": "stainless steel",
+      "number": 6,
+    },
+    "mass": Object {
+      "kg": 2943000,
+      "lb": 1335000,
+    },
+    "name": "Starship",
+    "payload_weights": Array [
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+      Array [
+        [Function],
+      ],
+    ],
+    "second_stage": Object {
+      "burn_time_sec": null,
+      "engines": 6,
+      "fuel_amount_tons": 1200,
+      "payloads": Array [
+        [Function],
+      ],
+      "thrust": Array [
+        [Function],
+      ],
+    },
+    "stages": 2,
+    "success_rate_pct": 0,
+    "type": "rocket",
+    "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_Starship",
+  },
+]
+`;

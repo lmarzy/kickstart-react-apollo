@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`books resolver full response 1`] = `
+Array [
+  Object {
+    "author": "Harper Lee",
+    "id": 1000,
+    "title": "To Kill a Mockingbird",
+  },
+  Object {
+    "author": "F.Scott Fitzgerald",
+    "id": 1001,
+    "title": "The Great Gatsby",
+  },
+]
+`;
