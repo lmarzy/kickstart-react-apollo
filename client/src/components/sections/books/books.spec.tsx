@@ -52,7 +52,7 @@ describe('<Books />', () => {
   });
 
   test('renders component in final state', async () => {
-    const { getByTestId } = render(
+    const { getByText, getByTestId } = render(
       <MockedProvider mocks={mocksData} addTypename={false}>
         <Books />
       </MockedProvider>,
@@ -60,7 +60,10 @@ describe('<Books />', () => {
 
     await waitFor(() => getByTestId('books'));
 
-    expect(getByTestId('books')).toBeInTheDocument();
+    mocksData[0].result.data.books.forEach((book) => {
+      expect(getByText(book.title)).toBeInTheDocument();
+      expect(getByText(book.author)).toBeInTheDocument();
+    });
   });
   test('renders component in error state', async () => {
     const { getByText } = render(

@@ -16,7 +16,7 @@ export const Books = (): ReactElement => {
         <dl data-testid="books">
           {data.books.map(({ id, title, author }) => (
             <Fragment key={id}>
-              <dt>{title}:</dt>
+              <dt>{title}</dt>
               <dl>{author}</dl>
             </Fragment>
           ))}

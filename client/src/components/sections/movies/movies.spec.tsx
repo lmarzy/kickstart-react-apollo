@@ -52,7 +52,7 @@ describe('<Movies />', () => {
   });
 
   test('renders component in final state', async () => {
-    const { getByTestId } = render(
+    const { getByText, getByTestId } = render(
       <MockedProvider mocks={mocksData} addTypename={false}>
         <Movies />
       </MockedProvider>,
@@ -60,7 +60,10 @@ describe('<Movies />', () => {
 
     await waitFor(() => getByTestId('movies'));
 
-    expect(getByTestId('movies')).toBeInTheDocument();
+    mocksData[0].result.data.movies.forEach((movie) => {
+      expect(getByText(movie.title)).toBeInTheDocument();
+      expect(getByText(movie.length.toString())).toBeInTheDocument();
+    });
   });
   test('renders component in error state', async () => {
     const { getByText } = render(
