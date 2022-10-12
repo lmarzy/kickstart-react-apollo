@@ -23,7 +23,7 @@
   "homepage": "https://github.com/lmarzy/kickstart-react-apollo.git#readme",
   "dependencies": {
     "apollo-datasource-rest": "^0.9.3",
-    "apollo-server": "^2.13.1",
+    "apollo-server": "^2.25.4",
     "graphql": "^15.0.0"
   },
   "devDependencies": {
